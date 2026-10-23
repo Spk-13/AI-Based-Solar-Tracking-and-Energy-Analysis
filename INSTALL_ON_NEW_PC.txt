@@ -1,0 +1,46 @@
+PROJECT STAGE 1 BATCH 1 MAJOR PROJECT
+NEW WINDOWS PC INSTALLATION
+
+BEFORE YOU START
+- Install Python 3.12.x 64-bit and enable "Add Python to PATH".
+- Chrome or Edge is recommended. Enable graphics acceleration for the 3D view.
+- Connect to the internet for the one-time Python package installation.
+- You do not need Node.js, Blender, Git, an Arduino IDE or extra 3D downloads.
+
+INSTALL
+1. Extract the ZIP fully. Example destination: C:\SolarProject.
+   Do not start the program while it is still inside the ZIP preview.
+2. Open the extracted folder containing run.py and requirements.txt.
+3. Click the folder address bar, type cmd, and press Enter.
+4. Check Python: py -3.12 --version
+5. Install packages: py -3.12 -m pip install -r requirements.txt
+6. Start: py -3.12 run.py
+7. Leave the black Command Prompt window open.
+8. In Chrome/Edge open: http://127.0.0.1:5000
+9. If the browser shows an older page, press Ctrl+F5.
+
+LATER RUNS
+Double-click START_DASHBOARD.bat, or open Command Prompt in the project folder
+and run py -3.12 run.py. To close the program, click the Command Prompt and
+press Ctrl+C.
+
+COMMON ISSUES
+- "py is not recognized": reinstall Python and enable PATH, or try `python`.
+  Confirm that `python --version` shows Python 3.12.
+- "No module named flask/numpy/sklearn/joblib": run the package-install step
+  from the project folder and wait for it to finish successfully.
+- Package download / pip timeout: confirm internet access and retry the same
+  install command. The browser graphics themselves are bundled locally.
+- "model.pkl missing": re-extract the complete project ZIP. Do not use the
+  small update ZIP when setting up a new computer.
+- Port 5000 already in use: close another copy of the project or another app
+  using that port, then run again.
+- 3D panel is blank: enable WebGL / hardware acceleration in Chrome or Edge,
+  restart the browser, then reload. Live Python data and charts may still work.
+- Browser cannot connect: leave the Python window running and use exactly
+  http://127.0.0.1:5000 on the same computer.
+- Folder path issue: move the extracted folder to a simple local path such as
+  C:\SolarProject, outside a ZIP preview or protected system folder.
+
+The project uses simulated readings. It does not connect to solar sensors,
+physical motors or real photovoltaic hardware.
